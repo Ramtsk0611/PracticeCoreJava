@@ -1,4 +1,4 @@
-package com.practice.example.oopsPractice;
+package com.practice.example.oopsPractice.interviewQuest;
 
 public class Test {
     public static void main(String[] args) {
