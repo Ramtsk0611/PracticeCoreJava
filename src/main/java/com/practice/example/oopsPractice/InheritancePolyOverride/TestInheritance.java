@@ -6,5 +6,6 @@ public class TestInheritance {
         child1.m0();
         child1.m1();
         child1.m2();
+        child1.m10();
     }
 }
