@@ -2,17 +2,17 @@ package com.practice.example.oopsPractice.abstraction;
 
 public class Person3 extends Human{
     @Override
-    void eat() {
+    public void eat() {
         System.out.println("Calling eat Method from Person3");
     }
 
     @Override
-    void walk() {
+    public void walk() {
         System.out.println("Calling walk Method from Person3");
     }
 
     @Override
-    void play() {
+    public void play() {
         System.out.println("Calling Play Method from Person3");
     }
     void drive(){

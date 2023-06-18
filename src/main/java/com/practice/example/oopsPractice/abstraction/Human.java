@@ -3,9 +3,9 @@ package com.practice.example.oopsPractice.abstraction;
 public abstract class Human {
     int a;
     String str;
-    abstract void eat();
-    abstract void walk();
-    abstract void play();
+    public abstract void eat();
+    public abstract void walk();
+    public abstract void play();
     public void breath(){
         System.out.println("Calling Breath Method from Human");
     }
