@@ -1,10 +1,11 @@
 package com.practice.example.collectionAPI;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class ArrayListPractice {
     public static void main(String[] args) {
-        ArrayList<String> obj = new ArrayList<String>(16);
+        LinkedList<String> obj = new LinkedList<>();
         obj.add("One");
         obj.add(1,"Two");
         obj.add("Three");
