@@ -13,7 +13,7 @@ public class ESPractice {
                                 + "method example");
 
                 return "Returning Callable "
-                        + "Task Result";
+                         + "Task Result";
             }
         });
         System.out.println(obj.get());
