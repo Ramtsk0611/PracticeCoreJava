@@ -31,5 +31,6 @@ public class BasicCalculator {
         System.out.println("The final result:");
         System.out.println(num1 + " " + op + " " + num2
                 + " = " + o);
+
     }
 }

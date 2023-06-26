@@ -25,6 +25,6 @@ public class ArrayListPractice {
         for(String str : obj){
             System.out.println(str);
         }
-        ArrayList objInt = new ArrayList<Integer>();
+        ArrayList objInt = new ArrayList<Integer>
     }
 }
