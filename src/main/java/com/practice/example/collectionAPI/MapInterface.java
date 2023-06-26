@@ -15,7 +15,10 @@ public class MapInterface {
         map1.put("1005","Manish");
         map1.put("1003","Sandeep");
         map1.put("1001","Mohan");
-        System.out.println(map1.toString());
+        System.out.println(map1.get("1003"));
+        map1.remove("Manish");
+        System.out.println(map1.containsKey("Manish"));
+        System.out.println(map1.size());
 
     }
 }
