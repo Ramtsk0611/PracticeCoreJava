@@ -1,9 +1,8 @@
 package com.practice.example.collectionAPI;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
-public class StudentImplement {
+public class StudentImpleByMap {
     public static void main(String[] args) {
         Student obj1 = new Student();
         obj1.setStuID(1001);
@@ -35,17 +34,22 @@ public class StudentImplement {
         obj5.setDob("25-July-1990");
         obj5.setGender("Male");
         obj5.setStuAge(32);
-        ArrayList<Student> stuObj1 = new ArrayList<Student>();
-        stuObj1.add(obj1);
-        stuObj1.add(obj2);
-        stuObj1.add(obj3);
-        stuObj1.add(obj4);
-        stuObj1.add(obj5);
-        Collections.sort(stuObj1,new StudSortById());
-        for(Student stu:stuObj1){
-//            System.out.println(stu.toString());
-            System.out.println(stu.getStuName());
-            System.out.println(stu.getStuID());
+        Map<Student,String> mapStudent = new TreeMap<>();
+        mapStudent.put(obj1, "Student no 1");
+        mapStudent.put(obj2, "Student no 2");
+        mapStudent.put(obj3, "Student no 3");
+        mapStudent.put(obj4, "Student no 4");
+        mapStudent.put(obj5, "Student no 5");
+        Iterator<Map.Entry<Student,String>> itr_stu = mapStudent.entrySet().iterator();
+
+        while(itr_stu.hasNext()){
+            Map.Entry<Student, String> entry = itr_stu.next();
+            Student obj = entry.getKey();
+            String value = entry.getValue();
+//            if(obj.getStuAge()>20) {
+                System.out.println(obj.toString());
+                System.out.println(value);
+//            }
         }
     }
 }
