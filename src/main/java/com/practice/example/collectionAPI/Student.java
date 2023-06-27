@@ -1,6 +1,8 @@
 package com.practice.example.collectionAPI;
 
-public class Student {
+import java.util.Objects;
+
+public class Student{
     private int stuID;
     private String stuName;
     private String dob;
@@ -46,6 +48,19 @@ public class Student {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student student)) return false;
+        return getStuID() == student.getStuID() && getStuAge() == student.getStuAge() && Objects.equals(getStuName(), student.getStuName()) && Objects.equals(getDob(), student.getDob()) && Objects.equals(getGender(), student.getGender());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getStuID(), getStuName(), getDob(), getStuAge(), getGender());
+    }
+
 
     @Override
     public String toString() {

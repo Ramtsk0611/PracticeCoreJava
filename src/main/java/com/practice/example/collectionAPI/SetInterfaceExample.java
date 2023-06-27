@@ -13,5 +13,14 @@ public class SetInterfaceExample {
         set.add("Manish");
         set.add("Ram");
         System.out.println(set.toString());
+        for(String str: set){
+            System.out.println(str);
+        }
+        Iterator<String> itr1 = set.iterator();
+        while(itr1.hasNext())
+        {
+            String key = itr1.next();
+            System.out.println("Key = " + key );
+        }
     }
 }
