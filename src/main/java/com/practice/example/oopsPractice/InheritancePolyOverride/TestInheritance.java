@@ -7,5 +7,7 @@ public class TestInheritance {
         child1.m1();
         child1.m2();
         child1.m10();
+        Child4 child4= new Child4();
+        child4.m1();
     }
 }

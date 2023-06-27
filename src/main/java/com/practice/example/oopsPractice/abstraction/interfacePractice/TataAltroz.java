@@ -1,9 +1,8 @@
 package com.practice.example.oopsPractice.abstraction.interfacePractice;
 
-import com.practice.example.oopsPractice.InheritancePolyOverride.Child1;
 import com.practice.example.oopsPractice.abstraction.Human;
 
-public class TataAltroz extends Human implements Car, Hatchbag{
+public class TataAltroz extends Human implements Car, Hatchback {
 
     @Override
     public void tyres() {

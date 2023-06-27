@@ -8,8 +8,10 @@ public class Test {
         emp1.m1(1001);
         emp2.m1(1002, "Mohan");
         emp3.m1(1003, "Ram", "24061985");
+        emp3.m2(1006,"John","23013001");
         System.out.println(emp1.toString());
         System.out.println(emp2.toString());
+        System.out.println(emp3.toString());
         System.out.println(emp3.toString());
     }
 }

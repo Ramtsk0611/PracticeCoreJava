@@ -4,11 +4,11 @@ public class Employee {
     int empId;
     String empName;
     String empDOB;
-    Employee(){     }
-    Employee(int empId) { this.empId = empId;}
-    Employee(int empId, String empName) { this.empId = empId; this.empName = empName;}
-    Employee(int empId, String empName, String empDOB) { this.empId = empId; this.empName = empName;
-    this.empDOB = empDOB;}
+//    Employee(){     }
+//    Employee(int empId) { this.empId = empId;}
+//    Employee(int empId, String empName) { this.empId = empId; this.empName = empName;}
+//    Employee(int empId, String empName, String empDOB) { this.empId = empId; this.empName = empName;
+//    this.empDOB = empDOB;}
     public void m1(){}
     public void m1(int empId) {
         this.empId = empId;
@@ -22,7 +22,11 @@ public class Employee {
         this.empName = empName;
         this.empDOB = empDOB;
     }
-
+    public void m2(int empId, String empName, String empDOB) {
+        this.empId = empId;
+        this.empName = empName;
+        this.empDOB = empDOB;
+    }
     @Override
     public String toString() {
         return "Employee{" +
