@@ -30,16 +30,30 @@ public class StudentImpleByMap {
         obj4.setStuAge(22);
         Student obj5 = new Student();
         obj5.setStuID(1005);
-        obj5.setStuName("ManishKumar");
+        obj5.setStuName("Manish Kumar");
         obj5.setDob("25-July-1990");
         obj5.setGender("Male");
         obj5.setStuAge(32);
+        Student obj6 = new Student();
+        obj6.setStuID(1006);
+        obj6.setStuName("ManishKumar");
+        obj6.setDob("25-June-1992");
+        obj6.setGender("Male");
+        obj6.setStuAge(27);
+        Student obj7 = new Student();
+        obj7.setStuID(1007);
+        obj7.setStuName("Kumar");
+        obj7.setDob("25-May-1990");
+        obj7.setGender("Male");
+        obj7.setStuAge(32);
         Map<Student,String> mapStudent = new TreeMap<>();
         mapStudent.put(obj1, "Student no 1");
         mapStudent.put(obj2, "Student no 2");
         mapStudent.put(obj3, "Student no 3");
         mapStudent.put(obj4, "Student no 4");
         mapStudent.put(obj5, "Student no 5");
+        mapStudent.put(obj6, "Student no 6");
+        mapStudent.put(obj7, "Student no 7");
         Iterator<Map.Entry<Student,String>> itr_stu = mapStudent.entrySet().iterator();
 
         while(itr_stu.hasNext()){
