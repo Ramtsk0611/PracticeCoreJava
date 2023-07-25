@@ -16,8 +16,8 @@ public class DayOneExercise {
         return outputArr;
     }
 
-    public boolean checkPalindrome(String inputStr){
-        char chIn [] =  inputStr.toCharArray();
+    public boolean checkPalindrome(String inputStr){//Java
+        char chIn [] =  inputStr.toCharArray();//0-J,1-A,2-V,3-A
         char chOut [] = new char[inputStr.length()];
         for(int i=0;i<chIn.length;i++){
             chOut[chOut.length-i-1] = chIn[i];
@@ -36,14 +36,14 @@ public class DayOneExercise {
         }
     }
     //{15,5,3,6,9,26,51,4}
-    public void findLargestNumberFromArray(int[] inputArray){
-        int largeNumber=inputArray[0];//15
-        for(int i=1;i<inputArray.length;i++){//1,2,3,4,5,6,7
-            if(largeNumber<inputArray[i]) {//15<5,15<3,15<6,15<9,15<26,26<51,51<4
-                largeNumber = inputArray[i];//26,51
+    public void findLargestNumberFromArray(int[] inputArray){//1,2,30,4,5,6,7
+        int largeNumber=inputArray[0];//1
+        for(int i=1;i<inputArray.length;i++){//i=1,2,3,4,5,6
+            if(largeNumber<inputArray[i]) {//1<2,2<30,30<4,30<5,30<6,30<7
+                largeNumber = inputArray[i];//largerNumber=2,30
             }
         }
-        System.out.println(largeNumber);//51
+        System.out.println(largeNumber);//30
     }
     //{2,1,45,6,23,765,3,-1,45,56,76}
     public void sortingArray(int arr1[]){

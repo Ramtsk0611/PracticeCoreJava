@@ -1,5 +1,4 @@
 package com.practice.example.basic;
-import java.lang.*;
 import java.util.Scanner;
 public class BasicCalculator {
     public static void main(String[] args)
