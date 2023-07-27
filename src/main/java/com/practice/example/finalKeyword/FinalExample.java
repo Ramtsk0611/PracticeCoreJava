@@ -9,21 +9,16 @@ public class FinalExample {
 
     {
         CAPACITY = 25;
-        System.out.println("Calling non static block");
-        System.out.println(toString());
     }
 
     static {
         EULERCONSTANT = 2.3;
-        System.out.println("Calling static block");
-//        System.out.println(new FinalExample().toString());
     }
 
     public FinalExample() {
         MINIMUM = -1;
-        System.out.println("Calling Constructor");
-        System.out.println(toString());
     }
+    @Override
     public String toString() {
         return "FinalExample{" +
                 "THRESHOLD=" + THRESHOLD +

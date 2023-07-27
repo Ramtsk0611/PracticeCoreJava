@@ -10,7 +10,6 @@ public class MyArrayList<Integer> {
     public MyArrayList() {
         elements = new int[DEFAULT_CAPACITY];
     }
-//1,2,3,3,4,.... 16
     public void add(Integer e) {
         if (size == elements.length) {
             ensureCapa();

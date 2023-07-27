@@ -5,17 +5,19 @@ import java.util.LinkedList;
 
 public class ArrayListPractice {
     public static void main(String[] args) {
-        LinkedList<String> obj = new LinkedList<>();
+        ArrayList<String> obj = new ArrayList<>();
         obj.add("One");
-        obj.add(1,"Two");
         obj.add("Three");
         obj.add("Four");
         obj.add("Five");
         obj.add("Six");
         obj.add("Seven");
         obj.add(0,"1");
+        obj.add(1,"Two");
         obj.remove(1);
-        ArrayList<String> obj2 = new ArrayList<String>(32);
+
+
+        ArrayList<String> obj2 = new ArrayList<String>();
         obj2.addAll(obj);
         obj2.add("SecondArrayList");
 
