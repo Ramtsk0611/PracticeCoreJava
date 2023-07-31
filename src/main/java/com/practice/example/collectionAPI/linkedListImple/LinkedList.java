@@ -15,6 +15,29 @@ public class LinkedList {
         }
         return list;
     }
+    public LinkedList inertByIndex(LinkedList list, int data, int index){
+        Node new_node = new Node(data); Node prev = null;
+        if(index == 0) {
+            list.head = new_node;
+        }
+        else {
+            int count = 0;
+            Node temp = list.head;
+            while(temp.next != null){
+                if(count==index){
+                    prev.next = new_node;
+                    new_node.next = temp;
+                } else {
+                    prev = temp;//1,2,3
+                    temp = temp.next;
+                }
+                count++;
+            }
+        }
+        return list;
+    }
+
+
     public void printList(LinkedList list) {
         Node currNode = list.head;
         System.out.print("LinkedList: ");
