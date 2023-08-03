@@ -1,4 +1,4 @@
-package com.practice.example.collectionAPI.linkedListImple;
+package com.practice.example.collectionAPI.linkedListImple.singlyList;
 
 public class TestLinkedList {
     public static void main(String[] args) {
