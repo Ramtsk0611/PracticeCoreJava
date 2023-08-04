@@ -34,22 +34,28 @@ public class StudentImpleByMap {
         obj5.setDob("25-July-1990");
         obj5.setGender("Male");
         obj5.setStuAge(32);
-        Map<Student,String> mapStudent = new TreeMap<>();
+        Student obj6 = new Student();
+        obj6.setStuID(1001);
+        obj6.setStuName("Ruthvik");
+        obj6.setDob("21-March-2005");
+        obj6.setGender("Male");
+        obj6.setStuAge(18);
+
+        Map<Student,String> mapStudent = new LinkedHashMap<>();
         mapStudent.put(obj1, "Student no 1");
         mapStudent.put(obj2, "Student no 2");
         mapStudent.put(obj3, "Student no 3");
         mapStudent.put(obj4, "Student no 4");
         mapStudent.put(obj5, "Student no 5");
+        mapStudent.put(obj6, "Student no 6");
+
         Iterator<Map.Entry<Student,String>> itr_stu = mapStudent.entrySet().iterator();
 
         while(itr_stu.hasNext()){
             Map.Entry<Student, String> entry = itr_stu.next();
             Student obj = entry.getKey();
             String value = entry.getValue();
-//            if(obj.getStuAge()>20) {
-                System.out.println(obj.toString());
-                System.out.println(value);
-//            }
+            System.out.println(obj.toString()+" ---- "+value);
         }
     }
 }

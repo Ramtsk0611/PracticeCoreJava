@@ -1,5 +1,7 @@
 package com.practice.example.collectionAPI;
 
+import java.util.Objects;
+
 public class Student implements Comparable<Student>{
     private int stuID;
     private String stuName;
@@ -66,9 +68,30 @@ public class Student implements Comparable<Student>{
                 ", gender='" + gender + '\'' +
                 '}';
     }
-
+//    @Override
+//    public int compareTo(Student o) {
+//        return this.getStuName().compareTo(o.getStuName());
+//    }
     @Override
     public int compareTo(Student o) {
-        return this.getStuName().compareTo(o.getStuName());
+       if(this.getStuID()>o.getStuID()){
+           return 1;
+       } else if(this.getStuID()<o.getStuID()){
+           return -1;
+       } else {
+           return 0;
+       }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student student)) return false;
+        return getStuID() == student.getStuID() && getStuAge() == student.getStuAge() && Objects.equals(getStuName(), student.getStuName()) && Objects.equals(getDob(), student.getDob()) && Objects.equals(getGender(), student.getGender());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getStuID(), getStuName(), getDob(), getStuAge(), getGender());
     }
 }

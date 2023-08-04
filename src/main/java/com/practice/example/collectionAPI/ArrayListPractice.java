@@ -49,7 +49,7 @@ public class ArrayListPractice {
         stuObj.add(stu3);
         stuObj.add(stu4);
         stuObj.add(stu5);
-        Collections.sort(stuObj);
+//        Collections.sort(stuObj);
         for(Student temp:stuObj){
             System.out.println(temp.getStuName());
         }
