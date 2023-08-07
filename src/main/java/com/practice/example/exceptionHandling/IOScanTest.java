@@ -5,10 +5,9 @@ import java.util.Scanner;
 
 public class IOScanTest {
     public static void main(String[] argv) {
-        String s = "&^%^#$#jhfgjg";
+        String s = null;
         try(Scanner scanner = new Scanner(s)) {
-            System.out.println("" + scanner.nextInt());
-            scanner.close();
+            System.out.println("" + scanner.next());
         }catch(NullPointerException n){
             System.out.println("Inside N: "+n.toString());
         }catch(Exception e){
