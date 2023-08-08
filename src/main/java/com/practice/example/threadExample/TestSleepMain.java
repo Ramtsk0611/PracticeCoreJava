@@ -1,14 +1,24 @@
 package com.practice.example.threadExample;
 
 public class TestSleepMain {
-    public static void main(String argvs[]) {
-        try {
-            for (int j = 0; j < 5; j++) {
+    public void runTest() {
+        for (int i = 1; i < 5; i++) {
+            try {
                 Thread.sleep(1000);
-                System.out.println(j);
+            } catch (InterruptedException e) {
+                System.out.println(e);
             }
-        } catch (Exception expn) {
-            System.out.println(expn);
+            System.out.println(Thread.currentThread()+"-"+i);
         }
+    }
+    public static void main(String argvs[]) {
+        TestSleepMain obj1 = new TestSleepMain();
+        TestSleepMain obj2 = new TestSleepMain();
+        TestSleepMain obj3 = new TestSleepMain();
+        TestSleepMain obj4 = new TestSleepMain();
+        obj1.runTest();
+        obj2.runTest();
+        obj3.runTest();
+        obj4.runTest();
     }
 }
