@@ -61,4 +61,12 @@ public class PatternProgram {
             System.out.println();
         }
     }
+    public void squarePattern(int inputLength){
+        for(int i=0;i<inputLength;i++){
+            for(int j=0;j<inputLength;j++){
+                System.out.print("*"+"  ");
+            }
+            System.out.println();
+        }
+    }
 }

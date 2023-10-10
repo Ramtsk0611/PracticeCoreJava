@@ -18,6 +18,7 @@ public class FinalExample {
     public FinalExample() {
         MINIMUM = -1;
     }
+
     @Override
     public String toString() {
         return "FinalExample{" +

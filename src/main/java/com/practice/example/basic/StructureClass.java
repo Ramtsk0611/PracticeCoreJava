@@ -4,27 +4,24 @@ public class StructureClass {
 	//Instant Variable
 	public int a=100;
 	public String str;
-
 	//Non Static Block
 	{
 		System.out.println("Calling Non Static Block");
 	}
-
 	//Static Block
 	static {
 		System.out.println("Calling Static Block");
 	}
-
+	//Default Constructor
 	public StructureClass(){
 		System.out.println("calling Constructor");
 	}
-
 	//Parametrized Constructor
 	public StructureClass(int a){
 		System.out.println("Calling Parametrized Constructor");
 		this.a = a;
 	}
-
+	//OverLoaded Constructor
 	public StructureClass(int a, String str){
 		System.out.println("Calling Overloaded Constructor");
 		this.a = a;
